@@ -1,0 +1,102 @@
+Microsoft Windows [Version 10.0.19044.2251]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\rpatil5\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\Demo\src>javac test/Abc.java
+
+C:\Users\rpatil5\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\Demo\src>java test.Abc
+Hello Mumbai !!!!! 1
+Hello Mumbai !!!!! 2
+Hello Mumbai !!!!! 3
+Hello Mumbai !!!!! 4
+Hello Mumbai !!!!! 5
+
+C:\Users\rpatil5\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\Demo\src>git init
+Initialized empty Git repository in C:/Users/rpatil5/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/Demo/src/.git/
+
+C:\Users\rpatil5\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\Demo\src>git add .
+
+C:\Users\rpatil5\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\Demo\src>git commit -m "First commit"
+[master (root-commit) d403c30] First commit
+ 2 files changed, 12 insertions(+)
+ create mode 100644 test/Abc.class
+ create mode 100644 test/Abc.java
+
+C:\Users\rpatil5\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\Demo\src>git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+C:\Users\rpatil5\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\Demo\src>git remote add git-jenkinsRepo https://github.com/patilrahul20/git-jenkinsRepo.git
+
+C:\Users\rpatil5\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\Demo\src>git push git-jenkinsRepo
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream git-jenkinsRepo master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+C:\Users\rpatil5\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\Demo\src>git push --set -upstream git-jenkinsRepo master
+error: unknown switch `p'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --repo <repository>   repository
+    --all                 push all refs
+    --mirror              mirror all refs
+    -d, --delete          delete refs
+    --tags                push tags (can't be used with --all or --mirror)
+    -n, --dry-run         dry run
+    --porcelain           machine-readable output
+    -f, --force           force updates
+    --force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --force-if-includes   require remote updates to be integrated locally
+    --recurse-submodules (check|on-demand|no)
+                          control recursive pushing of submodules
+    --thin                use thin pack
+    --receive-pack <receive-pack>
+                          receive pack program
+    --exec <receive-pack>
+                          receive pack program
+    -u, --set-upstream    set upstream for git pull/status
+    --progress            force progress reporting
+    --prune               prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --follow-tags         push missing but relevant tags
+    --signed[=(yes|no|if-asked)]
+                          GPG sign the push
+    --atomic              request atomic transaction on remote side
+    -o, --push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+
+C:\Users\rpatil5\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\Demo\src>git push --set-upstream git-jenkinsRepo master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 960 bytes | 480.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/patilrahul20/git-jenkinsRepo/pull/new/master
+remote:
+To https://github.com/patilrahul20/git-jenkinsRepo.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'git-jenkinsRepo/master'.
+
+C:\Users\rpatil5\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\Demo\src>
+
+
